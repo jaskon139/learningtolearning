@@ -392,14 +392,27 @@ class MetaOptimizer(object):
 
        def next_deltas( deltasvalue , x, fx ):
           temp_next_x = deltasvalue * 50 + x
+
+          print("next temp ==============================")
+          print(temp_next_x)
+
           next_x = np.argsort(temp_next_x)
+
+          ok_next = np.zeros(x.shape)
+          for i in range(x.shape[0]):
+              for j in range(x.shape[1]  ):
+                  if j != x.shape[1]:
+                      ok_next[i][j] = next_x[i][j+1]
+                  else:
+                      ok_next[i][j] = next_x[i][0]
+
           print("next==fx=")
           print(fx)
           print("deltasvalue===")
           print(deltasvalue)
           print("next===")
           print(next_x)
-          return next_x-x
+          return ok_next - x
 
        with tf.name_scope("deltas"):
             deltas, state_next = zip(*[net(g, s) for g, s in zip(gradientslist, state)])

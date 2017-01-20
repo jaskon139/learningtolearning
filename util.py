@@ -92,7 +92,7 @@ def get_config(problem_name, path=None):
     }}
     net_assignments = None
   elif problem_name == "quadratictest":
-    problem = problems.quadratictest(batch_size=300, num_dims_numsity=50)
+    problem = problems.quadratictest(batch_size=100, num_dims_numsity=30)
     net_config = {"cw": {
         "net": "CoordinateWiseDeepLSTM",
         "net_options": {"layers": (20, 20)},
