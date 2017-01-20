@@ -399,8 +399,8 @@ class MetaOptimizer(object):
           next_x = np.argsort(temp_next_x)
 
           ok_next = np.zeros(x.shape)
-          for i in range(x.shape[0]):
-              for j in range(x.shape[1]  ):
+          for i in range(x.shape[1]):
+              for j in range(x.shape[0]):
                   if j != x.shape[1]:
                       ok_next[i][j] = next_x[i][j+1]
                   else:
