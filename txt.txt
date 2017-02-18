@@ -1,0 +1,88 @@
+Optimizee variables
+[u'x:0']
+Problem variables
+[u'city_x_y:0']
+Optimizer 'cw' variables
+[u'vars_optimizer/cw_deep_lstm/lstm_1/w_gates:0', u'vars_optimizer/cw_deep_lstm/lstm_1/b_gates:0', u'vars_optimizer/cw_deep_lstm/lstm_2/w_gates:0', u'vars_optimizer/cw_deep_lstm/lstm_2/b_gates:0', u'vars_optimizer/cw_deep_lstm/linear/w:0', u'vars_optimizer/cw_deep_lstm/linear/b:0']
+Traceback (most recent call last):
+  File "/home/jaskon139/anaconda3/envs/tensorflow/lib/python2.7/site-packages/tensorflow/python/ops/script_ops.py", line 85, in __call__
+    ret = func(*args)
+  File "/home/jaskon139/learning-to-learn-master2/meta.py", line 343, in next_deltas
+    next_x = np.argsort(next_x)
+NameError: global name 'np' is not defined
+W tensorflow/core/framework/op_kernel.cc:975] Internal: Failed to run py callback pyfunc_4: see error log.
+/home/jaskon139/learning-to-learn-master2/problems.py:178: VisibleDeprecationWarning: using a non-integer number instead of an integer will result in an error in the future
+  lastcity = city_x_y[i][j_x]
+/home/jaskon139/learning-to-learn-master2/problems.py:176: VisibleDeprecationWarning: using a non-integer number instead of an integer will result in an error in the future
+  value1 = np.array([city_x_y[i][j_x]])
+/home/jaskon139/learning-to-learn-master2/problems.py:174: VisibleDeprecationWarning: using a non-integer number instead of an integer will result in an error in the future
+  value1 = np.row_stack((value1, city_x_y[i][j_x]))
+/home/jaskon139/learning-to-learn-master2/problems.py:146: VisibleDeprecationWarning: using a non-integer number instead of an integer will result in an error in the future
+  value1 = np.array([city_x_y[i][j_x]])
+/home/jaskon139/learning-to-learn-master2/problems.py:144: VisibleDeprecationWarning: using a non-integer number instead of an integer will result in an error in the future
+  value1 = np.row_stack((value1, city_x_y[i][j_x]))
+Traceback (most recent call last):
+  File "train2.py", line 115, in <module>
+    tf.app.run()
+  File "/home/jaskon139/anaconda3/envs/tensorflow/lib/python2.7/site-packages/tensorflow/python/platform/app.py", line 43, in run
+    sys.exit(main(sys.argv[:1] + flags_passthrough))
+  File "train2.py", line 81, in main
+    num_unrolls)
+  File "/home/jaskon139/learning-to-learn-master2/util.py", line 34, in run_epoch
+    cost = sess.run([cost_op] + ops)[0]
+  File "/home/jaskon139/anaconda3/envs/tensorflow/lib/python2.7/site-packages/tensorflow/python/training/monitored_session.py", line 473, in run
+    run_metadata=run_metadata)
+  File "/home/jaskon139/anaconda3/envs/tensorflow/lib/python2.7/site-packages/tensorflow/python/training/monitored_session.py", line 628, in run
+    run_metadata=run_metadata)
+  File "/home/jaskon139/anaconda3/envs/tensorflow/lib/python2.7/site-packages/tensorflow/python/training/monitored_session.py", line 595, in run
+    return self._sess.run(*args, **kwargs)
+  File "/home/jaskon139/anaconda3/envs/tensorflow/lib/python2.7/site-packages/tensorflow/python/training/monitored_session.py", line 729, in run
+    run_metadata=run_metadata)
+  File "/home/jaskon139/anaconda3/envs/tensorflow/lib/python2.7/site-packages/tensorflow/python/training/monitored_session.py", line 595, in run
+    return self._sess.run(*args, **kwargs)
+  File "/home/jaskon139/anaconda3/envs/tensorflow/lib/python2.7/site-packages/tensorflow/python/client/session.py", line 766, in run
+    run_metadata_ptr)
+  File "/home/jaskon139/anaconda3/envs/tensorflow/lib/python2.7/site-packages/tensorflow/python/client/session.py", line 964, in _run
+    feed_dict_string, options, run_metadata)
+  File "/home/jaskon139/anaconda3/envs/tensorflow/lib/python2.7/site-packages/tensorflow/python/client/session.py", line 1014, in _do_run
+    target_list, options, run_metadata)
+  File "/home/jaskon139/anaconda3/envs/tensorflow/lib/python2.7/site-packages/tensorflow/python/client/session.py", line 1034, in _do_call
+    raise type(e)(node_def, op, message)
+tensorflow.python.framework.errors_impl.InternalError: Failed to run py callback pyfunc_4: see error log.
+	 [[Node: unroll/dx/PyFuncStateless = PyFuncStateless[Tin=[DT_FLOAT, DT_FLOAT], Tout=[DT_FLOAT], token="pyfunc_4", _device="/job:localhost/replica:0/task:0/cpu:0"](unroll/dx/PyFuncStateless/input_0, unroll/dx/PyFuncStateless/input_1)]]
+
+Caused by op u'unroll/dx/PyFuncStateless', defined at:
+  File "train2.py", line 115, in <module>
+    tf.app.run()
+  File "/home/jaskon139/anaconda3/envs/tensorflow/lib/python2.7/site-packages/tensorflow/python/platform/app.py", line 43, in run
+    sys.exit(main(sys.argv[:1] + flags_passthrough))
+  File "train2.py", line 68, in main
+    second_derivatives=FLAGS.second_derivatives)
+  File "/home/jaskon139/learning-to-learn-master2/meta.py", line 437, in meta_minimize
+    info = self.meta_loss(make_loss, len_unroll, **kwargs)
+  File "/home/jaskon139/learning-to-learn-master2/meta.py", line 396, in meta_loss
+    name="unroll")
+  File "/home/jaskon139/anaconda3/envs/tensorflow/lib/python2.7/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2636, in while_loop
+    result = context.BuildLoop(cond, body, loop_vars, shape_invariants)
+  File "/home/jaskon139/anaconda3/envs/tensorflow/lib/python2.7/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2469, in BuildLoop
+    pred, body, original_loop_vars, loop_vars, shape_invariants)
+  File "/home/jaskon139/anaconda3/envs/tensorflow/lib/python2.7/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2419, in _BuildLoop
+    body_result = body(*packed_vars_for_body)
+  File "/home/jaskon139/learning-to-learn-master2/meta.py", line 375, in time_step
+    deltas, s_i_next = update(nets[key], fx, x_i, s_i)
+  File "/home/jaskon139/learning-to-learn-master2/meta.py", line 357, in update
+    getdeltas = tf.py_func(next_deltas,[deltas,x],[tf.float32], stateful= False)
+  File "/home/jaskon139/anaconda3/envs/tensorflow/lib/python2.7/site-packages/tensorflow/python/ops/script_ops.py", line 196, in py_func
+    input=inp, token=token, Tout=Tout, name=name)
+  File "/home/jaskon139/anaconda3/envs/tensorflow/lib/python2.7/site-packages/tensorflow/python/ops/gen_script_ops.py", line 60, in _py_func_stateless
+    Tout=Tout, name=name)
+  File "/home/jaskon139/anaconda3/envs/tensorflow/lib/python2.7/site-packages/tensorflow/python/framework/op_def_library.py", line 759, in apply_op
+    op_def=op_def)
+  File "/home/jaskon139/anaconda3/envs/tensorflow/lib/python2.7/site-packages/tensorflow/python/framework/ops.py", line 2240, in create_op
+    original_op=self._default_original_op, op_def=op_def)
+  File "/home/jaskon139/anaconda3/envs/tensorflow/lib/python2.7/site-packages/tensorflow/python/framework/ops.py", line 1128, in __init__
+    self._traceback = _extract_stack()
+
+InternalError (see above for traceback): Failed to run py callback pyfunc_4: see error log.
+	 [[Node: unroll/dx/PyFuncStateless = PyFuncStateless[Tin=[DT_FLOAT, DT_FLOAT], Tout=[DT_FLOAT], token="pyfunc_4", _device="/job:localhost/replica:0/task:0/cpu:0"](unroll/dx/PyFuncStateless/input_0, unroll/dx/PyFuncStateless/input_1)]]
+

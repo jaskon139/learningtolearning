@@ -1,0 +1,344 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ALLOWED_PADDINGS	nn/conv.py	/^ALLOWED_PADDINGS = {SAME, VALID}$/;"	v
+AbstractModule	nn/base.py	/^class AbstractModule(object):$/;"	c
+Adam	networks.py	/^class Adam(Network):$/;"	c
+AdamTest	networks_test.py	/^class AdamTest(tf.test.TestCase):$/;"	c
+BETA	nn/batch_norm.py	/^  BETA = "beta"$/;"	v	class:BatchNorm
+BETA_C	nn/gated_rnn.py	/^  BETA_C = "beta_c"  # (batch norm) bias for cell -> output$/;"	v	class:LSTM
+B_GATES	nn/gated_rnn.py	/^  B_GATES = "b_gates"  # bias of gates$/;"	v	class:LSTM
+BatchFlatten	nn/basic.py	/^class BatchFlatten(BatchReshape):$/;"	c
+BatchNorm	nn/batch_norm.py	/^class BatchNorm(base.AbstractModule):$/;"	c
+BatchReshape	nn/basic.py	/^class BatchReshape(base.AbstractModule, base.Transposable):$/;"	c
+CIFAR10_FILE	problems.py	/^CIFAR10_FILE = "cifar-10-binary.tar.gz"$/;"	v
+CIFAR10_FOLDER	problems.py	/^CIFAR10_FOLDER = "cifar-10-batches-bin"$/;"	v
+CIFAR10_URL	problems.py	/^CIFAR10_URL = "http:\/\/www.cs.toronto.edu\/~kriz"$/;"	v
+CellWithExtraInput	nn/gated_rnn.py	/^  class CellWithExtraInput(rnn_cell.RNNCell):$/;"	c	class:LSTM
+Clamp	preprocess.py	/^class Clamp(nn.AbstractModule):$/;"	c
+ClampTest	preprocess_test.py	/^class ClampTest(tf.test.TestCase):$/;"	c
+Conv2D	nn/conv.py	/^class Conv2D(base.AbstractModule, base.Transposable):$/;"	c
+Conv2DTranspose	nn/conv.py	/^class Conv2DTranspose(base.AbstractModule, base.Transposable):$/;"	c
+ConvNet2D	nn/convnet.py	/^class ConvNet2D(base.AbstractModule, base.Transposable):$/;"	c
+ConvNet2DTranspose	nn/convnet.py	/^class ConvNet2DTranspose(ConvNet2D):$/;"	c
+CoordinateWiseDeepLSTM	networks.py	/^class CoordinateWiseDeepLSTM(StandardDeepLSTM):$/;"	c
+CoordinateWiseDeepLSTMTest	networks_test.py	/^class CoordinateWiseDeepLSTMTest(tf.test.TestCase):$/;"	c
+DeepRNN	nn/basic_rnn.py	/^class DeepRNN(rnn_core.RNNCore):$/;"	c
+EnsembleTest	problems_test.py	/^class EnsembleTest(tf.test.TestCase):$/;"	c
+Error	nn/base.py	/^class Error(Exception):$/;"	c
+FLAGS	evaluate.py	/^FLAGS = flags.FLAGS$/;"	v
+FLAGS	train.py	/^FLAGS = flags.FLAGS$/;"	v
+GAMMA	nn/batch_norm.py	/^  GAMMA = "gamma"$/;"	v	class:BatchNorm
+GAMMA_C	nn/gated_rnn.py	/^  GAMMA_C = "gamma_c"  # batch norm scaling for cell -> output$/;"	v	class:LSTM
+GAMMA_H	nn/gated_rnn.py	/^  GAMMA_H = "gamma_h"  # batch norm scaling for previous_hidden -> gates$/;"	v	class:LSTM
+GAMMA_X	nn/gated_rnn.py	/^  GAMMA_X = "gamma_x"  # batch norm scaling for input -> gates$/;"	v	class:LSTM
+IncompatibleShapeError	nn/base.py	/^class IncompatibleShapeError(Error):$/;"	c
+IndexedStatsBatchNorm	nn/gated_rnn.py	/^  class IndexedStatsBatchNorm(base.AbstractModule):$/;"	c	class:LSTM
+KernelDeepLSTM	networks.py	/^class KernelDeepLSTM(StandardDeepLSTM):$/;"	c
+KernelDeepLSTMTest	networks_test.py	/^class KernelDeepLSTMTest(tf.test.TestCase):$/;"	c
+L2LTest	convergence_test.py	/^class L2LTest(tf.test.TestCase):$/;"	c
+L2LTest	meta_test.py	/^class L2LTest(tf.test.TestCase):$/;"	c
+LSTM	nn/gated_rnn.py	/^class LSTM(rnn_core.RNNCore):$/;"	c
+Linear	nn/basic.py	/^class Linear(base.AbstractModule, base.Transposable):$/;"	c
+LogAndSign	preprocess.py	/^class LogAndSign(nn.AbstractModule):$/;"	c
+LogAndSignTest	preprocess_test.py	/^class LogAndSignTest(tf.test.TestCase):$/;"	c
+MLP	nn/mlp.py	/^class MLP(base.AbstractModule, base.Transposable):$/;"	c
+MetaLoss	meta.py	/^MetaLoss = collections.namedtuple("MetaLoss", "loss, update, reset, fx, x")$/;"	v
+MetaOptimizer	meta.py	/^class MetaOptimizer(object):$/;"	c
+MetaStep	meta.py	/^MetaStep = collections.namedtuple("MetaStep", "step, update, reset, fx, x")$/;"	v
+Module	nn/base.py	/^class Module(AbstractModule):$/;"	c
+Network	networks.py	/^class Network(nn.RNNCore):$/;"	c
+NotConnectedError	nn/base.py	/^class NotConnectedError(Error):$/;"	c
+NotSupportedError	nn/base.py	/^class NotSupportedError(Error):$/;"	c
+POSSIBLE_INITIALIZER_KEYS	nn/batch_norm.py	/^  POSSIBLE_INITIALIZER_KEYS = {GAMMA, BETA}$/;"	v	class:BatchNorm
+POSSIBLE_INITIALIZER_KEYS	nn/convnet.py	/^  POSSIBLE_INITIALIZER_KEYS = {"w", "b"}$/;"	v	class:ConvNet2D
+POSSIBLE_KEYS	nn/gated_rnn.py	/^  POSSIBLE_KEYS = {W_GATES, B_GATES, W_F_DIAG, W_I_DIAG, W_O_DIAG, GAMMA_H,$/;"	v	class:LSTM
+ParentNotBuiltError	nn/base.py	/^class ParentNotBuiltError(Error):$/;"	c
+QuadraticTest	problems_test.py	/^class QuadraticTest(tf.test.TestCase):$/;"	c
+RNNCore	nn/rnn_core.py	/^class RNNCore(base.AbstractModule, rnn_cell.RNNCell):$/;"	c
+SAME	nn/conv.py	/^SAME = "SAME"$/;"	v
+Sequential	nn/sequential.py	/^class Sequential(base.AbstractModule):$/;"	c
+Sgd	networks.py	/^class Sgd(Network):$/;"	c
+SgdTest	networks_test.py	/^class SgdTest(tf.test.TestCase):$/;"	c
+SimpleMultiOptimizerTest	problems_test.py	/^class SimpleMultiOptimizerTest(tf.test.TestCase):$/;"	c
+SimpleTest	problems_test.py	/^class SimpleTest(tf.test.TestCase):$/;"	c
+StandardDeepLSTM	networks.py	/^class StandardDeepLSTM(Network):$/;"	c
+TrainableInitialState	nn/rnn_core.py	/^class TrainableInitialState(base.AbstractModule):$/;"	c
+Transposable	nn/base.py	/^class Transposable(object):$/;"	c
+UPDATE_OPS_COLLECTION	nn/base.py	/^  UPDATE_OPS_COLLECTION = tf.GraphKeys.UPDATE_OPS$/;"	v	class:AbstractModule
+UnderspecifiedError	nn/base.py	/^class UnderspecifiedError(Error):$/;"	c
+VALID	nn/conv.py	/^VALID = "VALID"$/;"	v
+W_F_DIAG	nn/gated_rnn.py	/^  W_F_DIAG = "w_f_diag"  # weight for prev_cell -> forget gate peephole$/;"	v	class:LSTM
+W_GATES	nn/gated_rnn.py	/^  W_GATES = "w_gates"  # weight for gates$/;"	v	class:LSTM
+W_I_DIAG	nn/gated_rnn.py	/^  W_I_DIAG = "w_i_diag"  # weight for prev_cell -> input gate peephole$/;"	v	class:LSTM
+W_O_DIAG	nn/gated_rnn.py	/^  W_O_DIAG = "w_o_diag"  # weight for prev_cell -> output gate peephole$/;"	v	class:LSTM
+__call__	nn/base.py	/^  def __call__(self, *args, **kwargs):$/;"	m	class:AbstractModule	file:
+__call__	nn/gated_rnn.py	/^    def __call__(self, inputs, state):$/;"	m	class:LSTM.CellWithExtraInput	file:
+__init__	meta.py	/^  def __init__(self, **kwargs):$/;"	m	class:MetaOptimizer
+__init__	networks.py	/^  def __init__(self, kernel_shape, name="kernel_deep_lstm", **kwargs):$/;"	m	class:KernelDeepLSTM
+__init__	networks.py	/^  def __init__(self, learning_rate=0.001, name="sgd"):$/;"	m	class:Sgd
+__init__	networks.py	/^  def __init__(self, learning_rate=1e-3, beta1=0.9, beta2=0.999, epsilon=1e-8,$/;"	m	class:Adam
+__init__	networks.py	/^  def __init__(self, name="cw_deep_lstm", **kwargs):$/;"	m	class:CoordinateWiseDeepLSTM
+__init__	networks.py	/^  def __init__(self, output_size, layers, preprocess_name="identity",$/;"	m	class:StandardDeepLSTM
+__init__	nn/base.py	/^  def __init__(self, build, name="module"):$/;"	m	class:Module
+__init__	nn/base.py	/^  def __init__(self, name):$/;"	m	class:AbstractModule
+__init__	nn/basic.py	/^  def __init__(self, name="batch_flatten"):$/;"	m	class:BatchFlatten
+__init__	nn/basic.py	/^  def __init__(self, shape, name="batch_reshape"):$/;"	m	class:BatchReshape
+__init__	nn/basic.py	/^  def __init__(self,$/;"	m	class:Linear
+__init__	nn/basic_rnn.py	/^  def __init__(self, cores, skip_connections=True, name="deep_rnn"):$/;"	m	class:DeepRNN
+__init__	nn/batch_norm.py	/^  def __init__(self, reduction_indices=None, offset=True, scale=False,$/;"	m	class:BatchNorm
+__init__	nn/conv.py	/^  def __init__(self, output_channels, kernel_shape, stride=1, rate=1,$/;"	m	class:Conv2D
+__init__	nn/conv.py	/^  def __init__(self, output_channels, output_shape, kernel_shape, stride=1,$/;"	m	class:Conv2DTranspose
+__init__	nn/convnet.py	/^  def __init__(self,$/;"	m	class:ConvNet2D
+__init__	nn/convnet.py	/^  def __init__(self,$/;"	m	class:ConvNet2DTranspose
+__init__	nn/gated_rnn.py	/^    def __init__(self, cell, *args, **kwargs):$/;"	m	class:LSTM.CellWithExtraInput
+__init__	nn/gated_rnn.py	/^    def __init__(self, max_unique_stats, name=None):$/;"	m	class:LSTM.IndexedStatsBatchNorm
+__init__	nn/gated_rnn.py	/^  def __init__(self,$/;"	m	class:LSTM
+__init__	nn/mlp.py	/^  def __init__(self,$/;"	m	class:MLP
+__init__	nn/rnn_core.py	/^  def __init__(self, initial_state, mask=None, name="trainable_initial_state"):$/;"	m	class:TrainableInitialState
+__init__	nn/sequential.py	/^  def __init__(self, layers, name="sequential"):$/;"	m	class:Sequential
+__init__	preprocess.py	/^  def __init__(self, k, name="preprocess_log"):$/;"	m	class:LogAndSign
+__init__	preprocess.py	/^  def __init__(self, min_value=None, max_value=None, name="clamp"):$/;"	m	class:Clamp
+__metaclass__	nn/rnn_core.py	/^  __metaclass__ = abc.ABCMeta$/;"	v	class:RNNCore
+_build	networks.py	/^  def _build(self, g, prev_state):$/;"	m	class:Adam
+_build	networks.py	/^  def _build(self, inputs, _):$/;"	m	class:Sgd
+_build	networks.py	/^  def _build(self, inputs, prev_state):$/;"	m	class:CoordinateWiseDeepLSTM
+_build	networks.py	/^  def _build(self, inputs, prev_state):$/;"	m	class:KernelDeepLSTM
+_build	networks.py	/^  def _build(self, inputs, prev_state):$/;"	m	class:StandardDeepLSTM
+_build	nn/base.py	/^  def _build(self, *args, **kwargs):$/;"	m	class:AbstractModule
+_build	nn/base.py	/^  def _build(self, *args, **kwargs):$/;"	m	class:Module
+_build	nn/basic.py	/^  def _build(self, inputs):$/;"	m	class:BatchReshape
+_build	nn/basic.py	/^  def _build(self, inputs):$/;"	m	class:Linear
+_build	nn/basic_rnn.py	/^  def _build(self, inputs, prev_state):$/;"	m	class:DeepRNN
+_build	nn/batch_norm.py	/^  def _build(self, input_batch, is_training=True, test_local_stats=True):$/;"	m	class:BatchNorm
+_build	nn/conv.py	/^  def _build(self, inputs):$/;"	m	class:Conv2D
+_build	nn/conv.py	/^  def _build(self, inputs):$/;"	m	class:Conv2DTranspose
+_build	nn/convnet.py	/^  def _build(self, inputs, is_training=True, test_local_stats=True):$/;"	m	class:ConvNet2D
+_build	nn/gated_rnn.py	/^    def _build(self, inputs, index, is_training, test_local_stats):$/;"	m	class:LSTM.IndexedStatsBatchNorm
+_build	nn/gated_rnn.py	/^  def _build(self, inputs, prev_state, is_training=True, test_local_stats=True):$/;"	m	class:LSTM
+_build	nn/mlp.py	/^  def _build(self, inputs):$/;"	m	class:MLP
+_build	nn/rnn_core.py	/^  def _build(self):$/;"	m	class:TrainableInitialState
+_build	nn/sequential.py	/^  def _build(self, *args):$/;"	m	class:Sequential
+_build	preprocess.py	/^  def _build(self, gradients):$/;"	m	class:LogAndSign
+_build	preprocess.py	/^  def _build(self, inputs):$/;"	m	class:Clamp
+_build_statistics_second_moment	nn/batch_norm.py	/^  def _build_statistics_second_moment(self, input_batch,$/;"	m	class:BatchNorm
+_build_statistics_variance	nn/batch_norm.py	/^  def _build_statistics_variance(self, input_batch,$/;"	m	class:BatchNorm
+_build_update_ops_second_moment	nn/batch_norm.py	/^  def _build_update_ops_second_moment(self, mean, second_moment, is_training):$/;"	m	class:BatchNorm
+_build_update_ops_variance	nn/batch_norm.py	/^  def _build_update_ops_variance(self, mean, variance, is_training):$/;"	m	class:BatchNorm
+_check_cores_output_sizes	nn/basic_rnn.py	/^  def _check_cores_output_sizes(self):$/;"	m	class:DeepRNN
+_conv_activation	problems.py	/^  def _conv_activation(x):  # pylint: disable=invalid-name$/;"	f	function:cifar10
+_convert_to_initializer	networks.py	/^def _convert_to_initializer(initializer):$/;"	f
+_create_batch_norm_variables	nn/gated_rnn.py	/^  def _create_batch_norm_variables(self, dtype):$/;"	m	class:LSTM
+_create_gate_variables	nn/gated_rnn.py	/^  def _create_gate_variables(self, input_shape, dtype):$/;"	m	class:LSTM
+_create_peephole_variables	nn/gated_rnn.py	/^  def _create_peephole_variables(self, dtype):$/;"	m	class:LSTM
+_debias_adam_estimate	networks.py	/^def _debias_adam_estimate(estimate, b, t):$/;"	f
+_ensure_is_connected	nn/base.py	/^  def _ensure_is_connected(self):$/;"	m	class:AbstractModule
+_fill_and_one_pad_stride	nn/conv.py	/^def _fill_and_one_pad_stride(stride, n):$/;"	f
+_fill_and_verify_kernel_shape	nn/conv.py	/^def _fill_and_verify_kernel_shape(x, n):$/;"	f
+_fill_shape	nn/conv.py	/^def _fill_shape(x, n):$/;"	f
+_get_flat_core_sizes	nn/basic_rnn.py	/^def _get_flat_core_sizes(cores):$/;"	f
+_get_initializers	networks.py	/^def _get_initializers(initializers, fields):$/;"	f
+_get_layer_initializers	networks.py	/^def _get_layer_initializers(initializers, layer_name, fields):$/;"	f
+_get_variables	meta.py	/^def _get_variables(func):$/;"	f
+_infer_shape	nn/basic.py	/^  def _infer_shape(self, dimensions):$/;"	m	class:BatchReshape
+_instantiate_layers	nn/convnet.py	/^  def _instantiate_layers(self):$/;"	m	class:ConvNet2D
+_instantiate_layers	nn/convnet.py	/^  def _instantiate_layers(self):$/;"	m	class:ConvNet2DTranspose
+_instantiate_layers	nn/mlp.py	/^  def _instantiate_layers(self):$/;"	m	class:MLP
+_make_nets	meta.py	/^def _make_nets(variables, config, net_assignments):$/;"	f
+_make_with_custom_variables	meta.py	/^def _make_with_custom_variables(func, variables):$/;"	f
+_maybe_download_cifar10	problems.py	/^def _maybe_download_cifar10(path):$/;"	f
+_nested_assign	meta.py	/^def _nested_assign(ref, value):$/;"	f
+_nested_variable	meta.py	/^def _nested_variable(init, name=None, trainable=False):$/;"	f
+_nn_initializers	problems.py	/^_nn_initializers = {$/;"	v
+_replicate_elements	nn/convnet.py	/^def _replicate_elements(input_iterable, num_times):$/;"	f
+_reshape_inputs	networks.py	/^  def _reshape_inputs(self, inputs):$/;"	m	class:CoordinateWiseDeepLSTM
+_reshape_inputs	networks.py	/^  def _reshape_inputs(self, inputs):$/;"	m	class:KernelDeepLSTM
+_set_default_initializer	nn/batch_norm.py	/^  def _set_default_initializer(self, var_name):$/;"	m	class:BatchNorm
+_single_learnable_state	nn/rnn_core.py	/^def _single_learnable_state(state, state_id=0, learnable=True):$/;"	f
+_update_adam_estimate	networks.py	/^def _update_adam_estimate(estimate, value, b):$/;"	f
+_verify_padding	nn/conv.py	/^def _verify_padding(padding):$/;"	f
+_wrap_variable_creation	meta.py	/^def _wrap_variable_creation(func, custom_getter):$/;"	f
+_xent_loss	problems.py	/^def _xent_loss(output, labels):$/;"	f
+activate_final	nn/convnet.py	/^  def activate_final(self):$/;"	m	class:ConvNet2D
+activate_final	nn/mlp.py	/^  def activate_final(self):$/;"	m	class:MLP
+b	nn/basic.py	/^  def b(self):$/;"	m	class:Linear
+b	nn/conv.py	/^  def b(self):$/;"	m	class:Conv2D
+b	nn/conv.py	/^  def b(self):$/;"	m	class:Conv2DTranspose
+beta	nn/batch_norm.py	/^  def beta(self):$/;"	m	class:BatchNorm
+build	problems.py	/^  def build():$/;"	f	function:cifar10
+build	problems.py	/^  def build():$/;"	f	function:ensemble
+build	problems.py	/^  def build():$/;"	f	function:mnist
+build	problems.py	/^  def build():$/;"	f	function:quadratic
+build	problems.py	/^  def build():$/;"	f	function:simple
+build	problems.py	/^  def build():$/;"	f	function:simple_multi_optimizer
+build_batch_stats	nn/batch_norm.py	/^    def build_batch_stats():$/;"	f	function:BatchNorm._build_statistics_second_moment
+build_batch_stats	nn/batch_norm.py	/^    def build_batch_stats():$/;"	f	function:BatchNorm._build_statistics_variance
+build_moving_stats	nn/batch_norm.py	/^    def build_moving_stats():$/;"	f	function:BatchNorm._build_statistics_second_moment
+build_moving_stats	nn/batch_norm.py	/^    def build_moving_stats():$/;"	f	function:BatchNorm._build_statistics_variance
+build_no_ops	nn/batch_norm.py	/^    def build_no_ops():$/;"	f	function:BatchNorm._build_update_ops_second_moment
+build_no_ops	nn/batch_norm.py	/^    def build_no_ops():$/;"	f	function:BatchNorm._build_update_ops_variance
+build_update_ops	nn/batch_norm.py	/^    def build_update_ops():$/;"	f	function:BatchNorm._build_update_ops_second_moment
+build_update_ops	nn/batch_norm.py	/^    def build_update_ops():$/;"	f	function:BatchNorm._build_update_ops_variance
+check_initializers	nn/util.py	/^def check_initializers(initializers, keys):$/;"	f
+check_nested_callables	nn/util.py	/^  def check_nested_callables(dictionary):$/;"	f	function:check_initializers
+check_nested_callables	nn/util.py	/^  def check_nested_callables(dictionary):$/;"	f	function:check_partitioners
+check_partitioners	nn/util.py	/^def check_partitioners(partitioners, keys):$/;"	f
+cifar10	problems.py	/^def cifar10(path,  # pylint: disable=invalid-name$/;"	f
+convolutional_problem	meta_test.py	/^    def convolutional_problem():$/;"	f	function:L2LTest.testConvolutional
+create_batch_norm	nn/gated_rnn.py	/^      def create_batch_norm():$/;"	f	function:LSTM.IndexedStatsBatchNorm._build
+create_bias_initializer	nn/conv.py	/^def create_bias_initializer(bias_shape):$/;"	f
+create_linear_initializer	nn/basic.py	/^def create_linear_initializer(input_size):$/;"	f
+create_weight_initializer	nn/conv.py	/^def create_weight_initializer(fan_in_shape):$/;"	f
+custom_get_variable	meta.py	/^  def custom_get_variable(*args, **kwargs):$/;"	f	function:_wrap_variable_creation
+custom_getter	meta.py	/^  def custom_getter(getter, name, **kwargs):$/;"	f	function:_get_variables
+custom_getter	meta.py	/^  def custom_getter(getter, name, **kwargs):$/;"	f	function:_make_with_custom_variables
+ensemble	problems.py	/^def ensemble(problems, weights=None):$/;"	f
+factory	networks.py	/^def factory(net, net_options=(), net_path=None):$/;"	f
+flags	evaluate.py	/^flags = tf.flags$/;"	v
+flags	train.py	/^flags = tf.flags$/;"	v
+gamma	nn/batch_norm.py	/^  def gamma(self):$/;"	m	class:BatchNorm
+get_config	util.py	/^def get_config(problem_name, path=None):$/;"	f
+get_coordinate	problems.py	/^  def get_coordinate(i):$/;"	f	function:simple_multi_optimizer
+get_default_net_config	util.py	/^def get_default_net_config(name, path):$/;"	f
+get_net_path	util.py	/^def get_net_path(name, path):$/;"	f
+get_possible_initializer_keys	nn/base.py	/^  def get_possible_initializer_keys(cls):$/;"	m	class:AbstractModule
+get_possible_initializer_keys	nn/basic.py	/^  def get_possible_initializer_keys(cls, use_bias=True):$/;"	m	class:Linear
+get_possible_initializer_keys	nn/conv.py	/^  def get_possible_initializer_keys(cls, use_bias=True):$/;"	m	class:Conv2D
+get_possible_initializer_keys	nn/conv.py	/^  def get_possible_initializer_keys(cls, use_bias=True):$/;"	m	class:Conv2DTranspose
+get_possible_initializer_keys	nn/gated_rnn.py	/^  def get_possible_initializer_keys($/;"	m	class:LSTM
+get_possible_initializer_keys	nn/mlp.py	/^  def get_possible_initializer_keys(cls, use_bias=True):$/;"	m	class:MLP
+get_variables_in_module	nn/util.py	/^def get_variables_in_module(module,$/;"	f
+get_variables_in_scope	nn/util.py	/^def get_variables_in_scope(scope, collection=tf.GraphKeys.TRAINABLE_VARIABLES):$/;"	f
+has_bias	nn/basic.py	/^  def has_bias(self):$/;"	m	class:Linear
+has_bias	nn/conv.py	/^  def has_bias(self):$/;"	m	class:Conv2D
+has_bias	nn/conv.py	/^  def has_bias(self):$/;"	m	class:Conv2DTranspose
+initial_state	nn/basic_rnn.py	/^  def initial_state(self, batch_size, dtype=tf.float32, trainable=False,$/;"	m	class:DeepRNN
+initial_state	nn/gated_rnn.py	/^  def initial_state(self, batch_size, dtype=tf.float32, trainable=False,$/;"	m	class:LSTM
+initial_state	nn/rnn_core.py	/^  def initial_state(self, batch_size, dtype=tf.float32, trainable=False,$/;"	m	class:RNNCore
+initial_state_for_inputs	networks.py	/^  def initial_state_for_inputs(self, inputs, **kwargs):$/;"	m	class:CoordinateWiseDeepLSTM
+initial_state_for_inputs	networks.py	/^  def initial_state_for_inputs(self, inputs, **kwargs):$/;"	m	class:KernelDeepLSTM
+initial_state_for_inputs	networks.py	/^  def initial_state_for_inputs(self, inputs, **kwargs):$/;"	m	class:Network
+initial_state_for_inputs	networks.py	/^  def initial_state_for_inputs(self, inputs, **kwargs):$/;"	m	class:Sgd
+initial_state_for_inputs	networks.py	/^  def initial_state_for_inputs(self, inputs, **kwargs):$/;"	m	class:StandardDeepLSTM
+initial_state_for_inputs	networks.py	/^  def initial_state_for_inputs(self, inputs, dtype=tf.float32, **kwargs):$/;"	m	class:Adam
+initializers	nn/conv.py	/^  def initializers(self):$/;"	m	class:Conv2D
+initializers	nn/conv.py	/^  def initializers(self):$/;"	m	class:Conv2DTranspose
+input_shape	nn/base.py	/^  def input_shape(self):$/;"	m	class:Transposable
+input_shape	nn/basic.py	/^  def input_shape(self):$/;"	m	class:BatchReshape
+input_shape	nn/basic.py	/^  def input_shape(self):$/;"	m	class:Linear
+input_shape	nn/conv.py	/^  def input_shape(self):$/;"	m	class:Conv2D
+input_shape	nn/conv.py	/^  def input_shape(self):$/;"	m	class:Conv2DTranspose
+input_shape	nn/convnet.py	/^  def input_shape(self):$/;"	m	class:ConvNet2D
+input_shape	nn/mlp.py	/^  def input_shape(self):$/;"	m	class:MLP
+is_connected	nn/base.py	/^  def is_connected(self):$/;"	m	class:AbstractModule
+kernel_shape	nn/conv.py	/^  def kernel_shape(self):$/;"	m	class:Conv2D
+kernel_shape	nn/conv.py	/^  def kernel_shape(self):$/;"	m	class:Conv2DTranspose
+kernel_shapes	nn/convnet.py	/^  def kernel_shapes(self):$/;"	m	class:ConvNet2D
+layers	nn/convnet.py	/^  def layers(self):$/;"	m	class:ConvNet2D
+layers	nn/mlp.py	/^  def layers(self):$/;"	m	class:MLP
+layers	nn/sequential.py	/^  def layers(self):$/;"	m	class:Sequential
+logging	evaluate.py	/^logging = tf.logging$/;"	v
+logging	train.py	/^logging = tf.logging$/;"	v
+main	evaluate.py	/^def main(_):$/;"	f
+main	train.py	/^def main(_):$/;"	f
+meta_loss	meta.py	/^  def meta_loss(self,$/;"	m	class:MetaOptimizer
+meta_minimize	meta.py	/^  def meta_minimize(self, make_loss, len_unroll, learning_rate=0.01, **kwargs):$/;"	m	class:MetaOptimizer
+mnist	problems.py	/^def mnist(layers,  # pylint: disable=invalid-name$/;"	f
+moving_mean	nn/batch_norm.py	/^  def moving_mean(self):$/;"	m	class:BatchNorm
+moving_second_moment	nn/batch_norm.py	/^  def moving_second_moment(self):$/;"	m	class:BatchNorm
+moving_variance	nn/batch_norm.py	/^  def moving_variance(self):$/;"	m	class:BatchNorm
+name	nn/base.py	/^  def name(self):$/;"	m	class:AbstractModule
+output_channels	nn/conv.py	/^  def output_channels(self):$/;"	m	class:Conv2D
+output_channels	nn/conv.py	/^  def output_channels(self):$/;"	m	class:Conv2DTranspose
+output_channels	nn/convnet.py	/^  def output_channels(self):$/;"	m	class:ConvNet2D
+output_shape	nn/conv.py	/^  def output_shape(self):$/;"	m	class:Conv2DTranspose
+output_shapes	nn/convnet.py	/^  def output_shapes(self):$/;"	m	class:ConvNet2DTranspose
+output_size	nn/basic.py	/^  def output_size(self):$/;"	m	class:Linear
+output_size	nn/basic_rnn.py	/^  def output_size(self):$/;"	m	class:DeepRNN
+output_size	nn/gated_rnn.py	/^    def output_size(self):$/;"	m	class:LSTM.CellWithExtraInput
+output_size	nn/gated_rnn.py	/^  def output_size(self):$/;"	m	class:LSTM
+output_sizes	nn/mlp.py	/^  def output_sizes(self):$/;"	m	class:MLP
+padding	nn/conv.py	/^  def padding(self):$/;"	m	class:Conv2D
+padding	nn/conv.py	/^  def padding(self):$/;"	m	class:Conv2DTranspose
+paddings	nn/convnet.py	/^  def paddings(self):$/;"	m	class:ConvNet2D
+print_stats	util.py	/^def print_stats(header, total_error, total_time, n):$/;"	f
+quadratic	problems.py	/^def quadratic(batch_size=128, num_dims=10, stddev=0.01, dtype=tf.float32):$/;"	f
+rate	nn/conv.py	/^  def rate(self):$/;"	m	class:Conv2D
+run_epoch	util.py	/^def run_epoch(sess, cost_op, ops, reset, num_unrolls):$/;"	f
+save	meta.py	/^  def save(self, sess, path=None):$/;"	m	class:MetaOptimizer
+save	networks.py	/^def save(network, sess, filename=None):$/;"	f
+simple	problems.py	/^def simple():$/;"	f
+simple_multi_optimizer	problems.py	/^def simple_multi_optimizer(num_dims=2):$/;"	f
+state_size	nn/basic_rnn.py	/^  def state_size(self):$/;"	m	class:DeepRNN
+state_size	nn/gated_rnn.py	/^    def state_size(self):$/;"	m	class:LSTM.CellWithExtraInput
+state_size	nn/gated_rnn.py	/^  def state_size(self):$/;"	m	class:LSTM
+stride	nn/conv.py	/^  def stride(self):$/;"	m	class:Conv2D
+stride	nn/conv.py	/^  def stride(self):$/;"	m	class:Conv2DTranspose
+strides	nn/convnet.py	/^  def strides(self):$/;"	m	class:ConvNet2D
+testConvolutional	meta_test.py	/^  def testConvolutional(self):$/;"	m	class:L2LTest
+testLogWithOnes	preprocess_test.py	/^  def testLogWithOnes(self):$/;"	m	class:LogAndSignTest
+testMax	preprocess_test.py	/^  def testMax(self):$/;"	m	class:ClampTest
+testMin	preprocess_test.py	/^  def testMin(self):$/;"	m	class:ClampTest
+testMinAndMax	preprocess_test.py	/^  def testMinAndMax(self):$/;"	m	class:ClampTest
+testMultiOptimizer	meta_test.py	/^  def testMultiOptimizer(self, net_assignments, net_config):$/;"	m	class:L2LTest
+testNonTrainable	networks_test.py	/^  def testNonTrainable(self):$/;"	m	class:AdamTest
+testNonTrainable	networks_test.py	/^  def testNonTrainable(self):$/;"	m	class:SgdTest
+testResults	meta_test.py	/^  def testResults(self):$/;"	m	class:L2LTest
+testResults	networks_test.py	/^  def testResults(self):$/;"	m	class:SgdTest
+testResults	networks_test.py	/^  def testResults(self, initializer):$/;"	m	class:CoordinateWiseDeepLSTMTest
+testResults	networks_test.py	/^  def testResults(self, initializer):$/;"	m	class:KernelDeepLSTMTest
+testSaveAndLoad	meta_test.py	/^  def testSaveAndLoad(self):$/;"	m	class:L2LTest
+testSecondDerivatives	meta_test.py	/^  def testSecondDerivatives(self):$/;"	m	class:L2LTest
+testShape	networks_test.py	/^  def testShape(self):$/;"	m	class:AdamTest
+testShape	networks_test.py	/^  def testShape(self):$/;"	m	class:CoordinateWiseDeepLSTMTest
+testShape	networks_test.py	/^  def testShape(self):$/;"	m	class:KernelDeepLSTMTest
+testShape	networks_test.py	/^  def testShape(self):$/;"	m	class:SgdTest
+testShape	preprocess_test.py	/^  def testShape(self):$/;"	m	class:ClampTest
+testShape	preprocess_test.py	/^  def testShape(self):$/;"	m	class:LogAndSignTest
+testShape	problems_test.py	/^  def testShape(self):$/;"	m	class:EnsembleTest
+testShape	problems_test.py	/^  def testShape(self):$/;"	m	class:QuadraticTest
+testShape	problems_test.py	/^  def testShape(self):$/;"	m	class:SimpleMultiOptimizerTest
+testShape	problems_test.py	/^  def testShape(self):$/;"	m	class:SimpleTest
+testSign	preprocess_test.py	/^  def testSign(self):$/;"	m	class:LogAndSignTest
+testSimple	convergence_test.py	/^  def testSimple(self):$/;"	m	class:L2LTest
+testTrainable	networks_test.py	/^  def testTrainable(self):$/;"	m	class:CoordinateWiseDeepLSTMTest
+testTrainable	networks_test.py	/^  def testTrainable(self):$/;"	m	class:KernelDeepLSTMTest
+testValues	problems_test.py	/^  def testValues(self, value):$/;"	m	class:EnsembleTest
+testValues	problems_test.py	/^  def testValues(self, value):$/;"	m	class:QuadraticTest
+testValues	problems_test.py	/^  def testValues(self, value):$/;"	m	class:SimpleMultiOptimizerTest
+testValues	problems_test.py	/^  def testValues(self, value):$/;"	m	class:SimpleTest
+testVariables	problems_test.py	/^  def testVariables(self):$/;"	m	class:EnsembleTest
+testVariables	problems_test.py	/^  def testVariables(self):$/;"	m	class:QuadraticTest
+testVariables	problems_test.py	/^  def testVariables(self):$/;"	m	class:SimpleMultiOptimizerTest
+testVariables	problems_test.py	/^  def testVariables(self):$/;"	m	class:SimpleTest
+testWhileLoopProblem	meta_test.py	/^  def testWhileLoopProblem(self):$/;"	m	class:L2LTest
+testZeroLearningRate	networks_test.py	/^  def testZeroLearningRate(self):$/;"	m	class:AdamTest
+time_step	meta.py	/^    def time_step(t, fx_array, x, state):$/;"	f	function:MetaOptimizer.meta_loss
+train	convergence_test.py	/^def train(sess, minimize_ops, num_epochs, num_unrolls):$/;"	f
+train	meta_test.py	/^def train(sess, minimize_ops, num_epochs, num_unrolls):$/;"	f
+trainable_initial_state	nn/rnn_core.py	/^def trainable_initial_state(batch_size, state_size, dtype, initializers=None):$/;"	f
+transpose	nn/base.py	/^  def transpose(self, name=None, **kwargs):$/;"	m	class:Transposable
+transpose	nn/basic.py	/^  def transpose(self, name=None):$/;"	m	class:BatchReshape
+transpose	nn/basic.py	/^  def transpose(self, name=None):$/;"	m	class:Linear
+transpose	nn/conv.py	/^  def transpose(self, name=None):$/;"	m	class:Conv2D
+transpose	nn/conv.py	/^  def transpose(self, name=None):$/;"	m	class:Conv2DTranspose
+transpose	nn/convnet.py	/^  def transpose(self, name=None, output_channels=None):$/;"	m	class:ConvNet2D
+transpose	nn/convnet.py	/^  def transpose(self, name=None, output_channels=None):$/;"	m	class:ConvNet2DTranspose
+transpose	nn/mlp.py	/^  def transpose(self, name=None):$/;"	m	class:MLP
+update	meta.py	/^    def update(net, fx, x, state):$/;"	f	function:MetaOptimizer.meta_loss
+use_batch_norm	nn/convnet.py	/^  def use_batch_norm(self):$/;"	m	class:ConvNet2D
+use_batch_norm_c	nn/gated_rnn.py	/^  def use_batch_norm_c(self):$/;"	m	class:LSTM
+use_batch_norm_h	nn/gated_rnn.py	/^  def use_batch_norm_h(self):$/;"	m	class:LSTM
+use_batch_norm_x	nn/gated_rnn.py	/^  def use_batch_norm_x(self):$/;"	m	class:LSTM
+use_bias	nn/convnet.py	/^  def use_bias(self):$/;"	m	class:ConvNet2D
+use_bias	nn/mlp.py	/^  def use_bias(self):$/;"	m	class:MLP
+use_peepholes	nn/gated_rnn.py	/^  def use_peepholes(self):$/;"	m	class:LSTM
+var_scope	nn/base.py	/^  def var_scope(self):$/;"	m	class:AbstractModule
+w	nn/basic.py	/^  def w(self):$/;"	m	class:Linear
+w	nn/conv.py	/^  def w(self):$/;"	m	class:Conv2D
+w	nn/conv.py	/^  def w(self):$/;"	m	class:Conv2DTranspose
+while_loop_problem	meta_test.py	/^    def while_loop_problem():$/;"	f	function:L2LTest.testWhileLoopProblem
+with_batch_norm_control	nn/gated_rnn.py	/^  def with_batch_norm_control(self, is_training=True, test_local_stats=True):$/;"	m	class:LSTM

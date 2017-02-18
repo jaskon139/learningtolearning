@@ -1,0 +1,10 @@
+/home/jaskon139/learning-to-learn-master2/problems.py:177: VisibleDeprecationWarning: using a non-integer number instead of an integer will result in an error in the future
+  lastcity = city_x_y[i][j_x]
+/home/jaskon139/learning-to-learn-master2/problems.py:145: VisibleDeprecationWarning: using a non-integer number instead of an integer will result in an error in the future
+  value1 = np.array([city_x_y[i][j_x]])
+/home/jaskon139/learning-to-learn-master2/problems.py:143: VisibleDeprecationWarning: using a non-integer number instead of an integer will result in an error in the future
+  value1 = np.row_stack((value1, city_x_y[i][j_x]))
+/home/jaskon139/learning-to-learn-master2/problems.py:175: VisibleDeprecationWarning: using a non-integer number instead of an integer will result in an error in the future
+  value1 = np.array([city_x_y[i][j_x]])
+/home/jaskon139/learning-to-learn-master2/problems.py:173: VisibleDeprecationWarning: using a non-integer number instead of an integer will result in an error in the future
+  value1 = np.row_stack((value1, city_x_y[i][j_x]))
